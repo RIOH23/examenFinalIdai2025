@@ -17,13 +17,13 @@ function cambioDeGenero() {
         nombre.textContent = "Sergia Ontiveros";
         ocupacion.textContent = "Licenciada en Sistemas Computacionales";
         esMasculino = false;
-        alert("El nombre y la ocupacion han sido cambaidos a femeino...");
+        alert("El nombre y la ocupacion han sido cambiados a femenino...");
     }
     else {
         imagen.src = "img/usuarioH.png";
         nombre.textContent = "Sergio Ontiveros";
-        ocupacion.textContent = "Licennciado en Sistemas Computacionales";
+        ocupacion.textContent = "Licenciado en Sistemas Computacionales";
         esMasculino = true;
-        alert("El nombre y la ocupacion han sido cambaidos a masculino...");
+        alert("El nombre y la ocupacion han sido cambiados a masculino...");
     }
 }
