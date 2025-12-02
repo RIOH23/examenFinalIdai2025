@@ -7,12 +7,23 @@
 // Usa alert() para indicarle al usuario que se hicieron los cambios.
 
 function cambioDeGenero() {
-    var nombre = document.querySelector('.perfil-card h2');
-    var ocupacion = document.querySelector('.perfil-card p');
+    var nombre = document.querySelector(".perfil-card h2");
+    var ocupacion = document.querySelector(".perfil-card p");
+    var imagen = document.querySelector(".perfil-card img");
+    var esMasculino = true;
 
-    if (nombre.textContent === 'Sergio Ontiveros') {
-        nombre.textContent = 'Sergia Ontiveros';
+    if (nombre.textContent === "Sergio Ontiveros") {
+        imagen.src = "img/usuarioM.png";
+        nombre.textContent = "Sergia Ontiveros";
         ocupacion.textContent = "Licenciada en Sistemas Computacionales";
+        esMasculino = false;
         alert("El nombre y la ocupacion han sido cambaidos a femeino...");
+    }
+    else {
+        imagen.src = "img/usuarioH.png";
+        nombre.textContent = "Sergio Ontiveros";
+        ocupacion.textContent = "Licennciado en Sistemas Computacionales";
+        esMasculino = true;
+        alert("El nombre y la ocupacion han sido cambaidos a masculino...");
     }
 }
